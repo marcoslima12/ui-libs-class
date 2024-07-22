@@ -1,0 +1,22 @@
+import { GetServerSideProps } from 'next';
+import { {{pascalCase name}}Container } from './style';
+
+export interface {{pascalCase name}}Props {}
+
+const {{pascalCase name}} = ({}: {{pascalCase name}}Props) => {
+  return (
+    <{{pascalCase name}}Container>
+      <h1></h1>
+    </{{pascalCase name}}Container>
+  );
+};
+
+export default {{pascalCase name}};
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  // Adicione sua logica aqui
+
+  return {
+    props: {} // Sera passado para a pagina como props
+  };
+};
